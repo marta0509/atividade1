@@ -27,4 +27,12 @@ class FormController extends Controller
 	public function index(){
 		return view ('entrada');
 	}
+
+	public function empresa(){
+		return view ('empresa');
+	}
+
+	public function noticias(){
+		return view ('noticias');
+	}
 }

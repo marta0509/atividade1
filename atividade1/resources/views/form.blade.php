@@ -3,7 +3,7 @@
 Formulário
 @endsection
 @section('header')
-Registo
+Login
 @endsection
 @section('conteudo')
 	<!--aqui fica o form-->
@@ -12,10 +12,9 @@ Registo
 		<label for="nome">Nome</label>
 		<input type="text" name="nome">
 		<br>
-
-		<label for="morada">Morada</label>
-		<input type="text" name="morada">
+		<label for="apelido">Apelido</label>
+		<input type="text" name="apelido">
 		<br>
-<button type="submit">Enviar</button>
+<button class="BT" type="submit">Login</button>
 	</form>
 @endsection

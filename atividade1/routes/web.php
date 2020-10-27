@@ -21,6 +21,14 @@ Route::get('form','App\Http\Controllers\FormController@mostrarForm')->name('most
 
 Route::post('form','App\Http\Controllers\FormController@processarForm')->name('processar.form');
 
-Route::get('/', function () {
-    return view('index');
-});
+/*Route::get('/', function () {
+    return view('entrada');
+});*/
+
+Route::get('/','App\Http\Controllers\FormController@index')->name('index');
+
+Route::get('/entrada','App\Http\Controllers\FormController@index')->name('entrada');
+
+Route::get('/empresa','App\Http\Controllers\FormController@empresa')->name('empresa');
+
+Route::get('/noticias','App\Http\Controllers\FormController@empresa')->name('noticias');
