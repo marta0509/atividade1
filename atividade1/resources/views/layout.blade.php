@@ -19,12 +19,28 @@
 
 
 <!--Rodapé-->
-	<p style="background: #F78181">
-		
-		<a href="{{route('empresa')}}">Empresa</a>
 	
-		<a href="{{route('noticias')}}">Noticias</a>
-	</p> 
+	<div style="background:#F78181 " class="row">
+		<div class="col-md-3">
+			
+		</div>
+
+		<div class="col-md-3">
+			<a href="{{route('empresa')}}">Empresa</a>
+		</div>
+
+		<div class="col-md-3">
+			<a href="{{route('noticias')}}">Noticias</a>
+		</div>
+
+		<div class="col-md-3">
+
+		</div>
+	</div>
+		
+	
+		
+	
 
 	<script src="{{asset('JS/jquery-3.5.1.min.js')}}"></script>
 	<script src="{{asset('JS/bootstrap.js')}}"></script>
