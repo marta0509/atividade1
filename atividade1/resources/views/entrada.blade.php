@@ -1,6 +1,6 @@
 @extends('layout')
 @section('titulo-pagina')
-Registo
+Home
 @endsection
 @section('header')
 Bem-Vindo

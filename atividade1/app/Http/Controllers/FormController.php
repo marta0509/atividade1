@@ -14,13 +14,15 @@ class FormController extends Controller
     public function processarForm(Request $request)
 	{
 		$nome=$request->nome;
-		$morada=$request->morada;
-		$automovel=$request->automovel;
+		$apelido=$request->apelido;
+		$mail=$request->mail;
+		$mensagem=$request->mensagem;
 
 		return view('form-enviado', [
 			'nome'=>$nome,
-			'morada'=>$morada,
-			'automovel'=>$automovel
+			'apelido'=>$apelido,
+			'mail'=>$mail,
+			'mensagem'=>$mensagem
 		]);
 	}
 
@@ -34,5 +36,9 @@ class FormController extends Controller
 
 	public function noticias(){
 		return view ('noticias');
+	}
+
+	public function ondeestamos(){
+		return view ('onde-estamos');
 	}
 }

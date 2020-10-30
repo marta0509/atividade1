@@ -12,9 +12,19 @@ Login
 		<label for="nome">Nome</label>
 		<input type="text" name="nome">
 		<br>
+
 		<label for="apelido">Apelido</label>
 		<input type="text" name="apelido">
 		<br>
-<button class="BT" type="submit">Login</button>
+
+		<label for="mail">Email</label>
+		<input type="text" name="mail">
+		<br>
+
+		<label for="mensagem">Mensagem</label>
+		<input type="text" name="mensagem">
+		<br>
+
+		<button class="BT" type="submit">Enviar</button>
 	</form>
 @endsection

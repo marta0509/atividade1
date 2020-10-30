@@ -17,13 +17,7 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-Route::get('form','App\Http\Controllers\FormController@mostrarForm')->name('mostrar.form');
 
-Route::post('form','App\Http\Controllers\FormController@processarForm')->name('processar.form');
-
-/*Route::get('/', function () {
-    return view('entrada');
-});*/
 
 Route::get('/','App\Http\Controllers\FormController@index')->name('index');
 
@@ -32,3 +26,9 @@ Route::get('/entrada','App\Http\Controllers\FormController@index')->name('entrad
 Route::get('/empresa','App\Http\Controllers\FormController@empresa')->name('empresa');
 
 Route::get('/noticias','App\Http\Controllers\FormController@empresa')->name('noticias');
+
+Route::get('form','App\Http\Controllers\FormController@mostrarForm')->name('mostrar.form');
+
+Route::post('form','App\Http\Controllers\FormController@processarForm')->name('processar.form');
+
+Route::get('/onde-estamos','App\Http\Controllers\FormController@ondeestamos')->name('onde.estamos');
